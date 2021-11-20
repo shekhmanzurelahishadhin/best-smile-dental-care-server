@@ -76,7 +76,7 @@ async function run() {
         const result = await appointmentCollection.findOne(query);
         res.json(result);
       })
-      // update appointment 
+      // update appointment //
       app.put('/appointment/update/:id',async(req,res)=>{
         console.log('update hitted');
         const id = req.params.id;
